@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "075e0cad96f0234158ee311c7f6f7ede",
+    "content-hash": "8e8e483146276b0d84fb163477451b13",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1837,18 +1837,65 @@
             "time": "2021-10-01T21:08:31+00:00"
         },
         {
-            "name": "naykel/gotime",
-            "version": "v0.4.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/naykel76/gotime.git",
-                "reference": "8d3d9b01a6b80296f3bd20609551488bcf7bf93d"
-            },
+            "name": "naykel/formit",
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/naykel76/gotime/zipball/8d3d9b01a6b80296f3bd20609551488bcf7bf93d",
-                "reference": "8d3d9b01a6b80296f3bd20609551488bcf7bf93d",
-                "shasum": ""
+                "type": "path",
+                "url": "C:/Users/nayke/Desktop/htdocs/nk_packages/formit",
+                "reference": "895ffd6fdf92114728733bae51f751004a00f850"
+            },
+            "require": {
+                "illuminate/support": "~7|~8"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~5|~6",
+                "phpunit/phpunit": "~9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Naykel\\Formit\\FormitServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Naykel\\Formit\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Naykel\\Formit\\Tests\\": "tests"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nathan Watts",
+                    "email": "nathan@naykel.com.au",
+                    "homepage": "https://naykel.com.au"
+                }
+            ],
+            "description": "Form components package NayKel Laravel applications",
+            "keywords": [
+                "Formit",
+                "Laravel"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": false
+            }
+        },
+        {
+            "name": "naykel/gotime",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "C:/Users/nayke/Desktop/htdocs/nk_packages/gotime",
+                "reference": "8d3d9b01a6b80296f3bd20609551488bcf7bf93d"
             },
             "require": {
                 "livewire/livewire": "^2.7",
@@ -1876,7 +1923,6 @@
                     "Naykel\\Gotime\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1890,14 +1936,13 @@
             "description": "Starter package for NayKel Laravel applications",
             "homepage": "https://naykel.com.au",
             "keywords": [
-                "Naykel",
-                "laravel"
+                "Laravel",
+                "Naykel"
             ],
-            "support": {
-                "issues": "https://github.com/naykel76/gotime/issues",
-                "source": "https://github.com/naykel76/gotime/tree/v0.4.1"
-            },
-            "time": "2021-11-23T21:06:53+00:00"
+            "transport-options": {
+                "symlink": true,
+                "relative": false
+            }
         },
         {
             "name": "nesbot/carbon",
@@ -8090,7 +8135,10 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "naykel/formit": 20,
+        "naykel/gotime": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
