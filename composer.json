@@ -14,6 +14,7 @@
         "laravel/framework": "^8.65",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
+        "naykel/authit": "dev-upgrade",
         "naykel/formit": "dev-master",
         "naykel/gotime": "dev-master"
     },

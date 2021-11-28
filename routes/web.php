@@ -21,6 +21,10 @@ Route::get('/', function () {
     ]);
 })->name('home');
 
+Route::get('/user/dashboard', function () {
+    return view('user/dashboard');
+})->middleware(['auth'])->name('user.dashboard');
+
 
 Route::post('/payments/pay', [PaymentController::class, 'pay'])->name('pay');
 Route::get('/payments/approval', [PaymentController::class, 'approval'])->name('approval');
@@ -39,3 +43,4 @@ Route::prefix('subscribe')->name('subscribe.')->group(function () {
     Route::get('/cancelled', 'SubscriptionController@cancelled')
         ->name('cancelled');
 });
+
