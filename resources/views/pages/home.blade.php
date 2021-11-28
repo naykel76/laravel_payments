@@ -1,5 +1,5 @@
-@extends('gotime::layouts.' . config('naykel.template'))
+<x-gotime-app-layout>
 
-@section('content')
 
-@endsection
+
+</x-gotime-app-layout>
